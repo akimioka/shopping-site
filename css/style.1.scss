@@ -1,0 +1,397 @@
+@import "compass";
+
+// colors
+$baseColor: #f9f8f6;
+
+//共通
+body{
+    font-size: 12px;
+     background-color: $baseColor;
+    }
+#menu {
+  cursor: pointer;
+}
+.sp_menu_toggle {
+  
+  display: none;
+}
+.home_box{
+    width: 100%;
+    color: #887f69;
+    background-color: #e8e4da;
+    float: left;
+    vertical-align: middle;
+    display: flex;
+    height: 35px;
+    align-items: center;
+    margin-top: -10px;
+    }
+.home{
+    width: 10px;
+    margin: 10px;
+}
+.cover{
+    margin-top: 10px;
+    width: 100%;
+}
+.brown_box{
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background-color: #877e68;
+    margin-top: 10px;
+    }
+.brown_text1{
+   margin: 17px 20px;
+}
+.brown_text2{
+   margin: 18px 20px;
+}
+.back{width: 115px;
+    height: 45px;
+    background-color: #877e68;
+    margin-top: 30px;
+    float: left;
+    color: white;
+    font-weight: bold;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+    
+.next{width: 115px;
+    height: 45px;
+    background-color: #877e68;
+    margin-top: 30px;
+    margin-right: 10px;
+    float: right;
+    color: white;
+    font-weight: bold;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.next1{ position: absolute;
+    top: 16px;
+    right: 10px;
+}
+.next2{position: absolute;
+    top: 16px;
+    right: 10px;
+transform: rotate( 90deg );
+}
+.categorie_name{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    height: 45px;
+    margin-top: 2px;
+    line-height : 44px;
+    text-indent : 20px;
+}
+.next3{
+    position: absolute;
+    top: 16px;
+    right: 10px;
+}
+
+.contact{float: right;
+         display: flex;
+         flex-direction: row;
+         }
+.contact img{ margin-left: 5px;
+margin-right: 5px;}
+
+.navi img{margin-left: 20px;}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+//PCビュー
+@media(min-width:769px){
+    //ヘッダー
+#header_in{
+    margin: 40px 230px;
+    }
+　.logo{float: left; }
+　
+　
+　//New Item
+
+.new_item{margin: 30px 0px;}
+.sp_newitem {display: none;}
+.newitem_box{margin: 2px;
+    float: left;
+    width: 230px;
+    height: 315px;
+    background-color: white;
+}
+.newitem{margin: 13px 12px 0px 13px;}
+
+.sp_recent{display: none;}
+.recent{margin: 30px 0px;}
+.guide_image {margin: 30px 0px;}
+.sp_guide{display: none;}
+.guide_box{width: 350px;
+            height: 270px;
+            background-color: white;
+            float: left;
+            margin-left: 2px;
+            margin-bottom: 90px;
+}
+.otodoke{margin-left: 10px;}
+
+h1.guide{color: #887f69;
+        font-size: 16px;
+        margin: 20px 0px 10px 10px;
+}
+h2.guide{color: #887f69;
+        font-size: 12px;
+        margin: 10px;
+}
+span.guide{margin-left: 10px;}
+//PCの検索窓
+.search{
+    background-color: white;
+    width: 220px;
+    height: 90px;
+}
+.search_title{
+   padding: 20px 0px 0px 20px;
+}
+
+.search_inner{
+    background-image: url(../images/images/top/search_icon.png);
+    background-repeat: no-repeat;
+    margin-top: 0.3rem;
+    background-position: right 5px center;
+    background-color:#eeeeee;
+    width: 180px;
+    height: 30px;
+    margin-left: 20px;
+    text-align: left;
+    line-height : 30px;
+    text-indent : 10px;
+    font-style: italic;
+    color: #cbcbcb;
+    
+}
+//PCのサイドメニュー
+.about_box{
+    background-color: white;
+    width: 100%;
+    height: 266px;
+    margin-top: 2px;
+}
+.about_img{
+    
+    margin: 10px;
+}
+p{
+    margin: 8px 12px;
+    
+}
+.more{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+.sp_navi img{display: none;}
+.owl-dot{
+    float: left;}
+.owl-theme .owl-dots .owl-dot span{
+    width:25px;height:2px;background:#D6D6D6;transition:opacity .2s ease;border-radius:0px}
+.owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{background:#9d1a2d}
+
+.pagetop{float: right;}
+
+.copy{ color: lightgray;
+font-size: 10px;
+    text-align: center;
+}
+    
+}//←PCビューここまで
+
+
+//spビュー
+@media(max-width:768px){
+
+    body{width: 100%;}
+    .logo{
+   text-align: center;
+   margin-top: 30px;
+   margin-bottom: 10px;
+    }
+ .navi {display:none;}
+.sp_navi img{display: block;
+    position: relative;
+}
+.sp_menu_toggle {
+  
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  background-color: white;
+  z-index: 2;
+}
+.contact img{display: block;}
+//New Item
+.new_item{display:none;}
+.sp_newitem{display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+.newitem_box{margin: 2px;
+    float: left;
+    width: 48%;
+    background-color: white;
+    }
+.newitem_box p{
+    margin: 8px 12px;
+   }
+.newitem{
+    display: block;
+    width: 88%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sp_recent{display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    margin-bottom: 10px;}
+.recent{display: none;}
+.guide_image {display: none;}
+.guide_container img{ 
+    display: block;
+    margin-top: 10px;
+                
+}
+
+
+.sp_guide{display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    background-color: $baseColor;
+    z-index: 1;
+}
+.guide_box{width: 98%;
+            background-color: white;
+            float: left;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+}
+
+.otodoke{margin-left: 10px;
+    width: 88%;
+}
+
+h1.guide{color: #887f69;
+        font-size: 16px;
+        margin: 20px 0px 10px 10px;
+}
+h2.guide{color: #887f69;
+        font-size: 12px;
+        margin: 10px;
+}
+span.guide{margin-left: 10px;}
+
+.contact{
+    display: flex;
+    justify-content: center;
+        }
+.contact img{
+    margin: 7px;
+}
+.owl-theme .owl-dots .owl-dot span{width: 50px;height: 4px;}
+.search_box{
+    display:none;}
+.owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{background:#9d1a2d}
+
+
+.side_bar{margin-top:30px;
+
+}
+.search{
+    background-color: white;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.search_title{
+   display: none;
+}
+
+.search_inner{
+    display: block;
+    background-image: url(../images/images/top/search_icon.png);
+    background-repeat: no-repeat;
+    margin-top: 0.3rem;
+    background-position: right 5px center;
+    background-color:#eeeeee;
+    width: 88%;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    line-height : 30px;
+    text-indent : 10px;
+    font-style: italic;
+    color: #cbcbcb;}
+.about_box{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    
+    margin-top: 2px;
+}
+.about_img{
+    margin: 10px;
+    width: 45%;
+}
+.about_box p{width: 45%;
+    margin: 8px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+}
+.more{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.pagetop{ display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
+}
+
+.copy{ color: lightgray;
+font-size: 10px;
+    text-align: center;
+    
+}
+
+
+    
+    
+}//←SPビューここまで
