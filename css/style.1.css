@@ -92,9 +92,7 @@ body {
   right: 10px; }
 
 .contact {
-  float: right;
-  display: flex;
-  flex-direction: row; }
+  display: flex; }
 
 .contact img {
   margin-left: 5px;
@@ -110,7 +108,7 @@ body {
 
 @media (min-width: 769px) {
   #header_in {
-    margin: 40px 230px; }
+    margin: 40px 190px; }
 
   　.logo {
     float: left; }
@@ -124,10 +122,15 @@ body {
   .sp_newitem {
     display: none; }
 
+  .newitem_container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; }
+
   .newitem_box {
-    margin: 2px;
+    margin-bottom: 5px;
     float: left;
-    width: 230px;
+    width: 232px;
     height: 315px;
     background-color: white; }
 
@@ -321,7 +324,7 @@ body {
 
   .otodoke {
     margin-left: 10px;
-    width: 88%; }
+    width: 174px; }
 
   h1.guide {
     color: #887f69;

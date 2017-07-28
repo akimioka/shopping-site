@@ -8,6 +8,7 @@ body{
     font-size: 12px;
      background-color: $baseColor;
     }
+hr{ margin: 1rem 0;}
 
 #menu {
   cursor: pointer;
@@ -96,10 +97,10 @@ transform: rotate( 90deg );
     right: 10px;
 }
 
-.contact{float: right;
-         display: flex;
-         flex-direction: row;
+.contact{display: flex;
          }
+
+
 .contact img{ margin-left: 5px;
 margin-right: 5px;}
 
@@ -116,7 +117,7 @@ margin-right: 5px;}
 @media(min-width:769px){
     //ヘッダー
 #header_in{
-    margin: 40px 230px;
+    margin: 40px 190px;
     }
 .logo{float: left; }
 .product_inner{
@@ -242,8 +243,8 @@ text-align: left;
 font-size: 14px;
 width: 50%;
 margin-right: 0;
-
-   
+display: inline-block;
+vertical-align: middle;  
 }
 
 .PRICE h1{color:#e80f66;
@@ -251,6 +252,10 @@ font-size: 22px;
 font-style: italic;
 display: inline-block;
 margin-left: 45px;
+vertical-align: middle;
+margin-top: 10px;
+margin-bottom: 10px;
+
 
      
 }
@@ -259,6 +264,9 @@ margin-left: 45px;
 font-size: 14px;
 font-style: italic;
 display: inline-block;
+vertical-align: middle;  
+margin-top: 10px;
+margin-bottom: 10px;
 }
 .Add{
 max-height: 56px;
@@ -266,20 +274,27 @@ float: right;
 
     
 }
+.sp_Add{
+    display: none;}
 #buy{display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    height: 80px;
+    
+    
     
 }
 .QUANTITIY{color:#887f69;
 font-size: 14px;}
 .box{ border: solid 1px;
 margin: 10px 30px;
- padding: 10px 50px;
+ padding: 10px;
 }
+.detail {margin-top: 30px;}
 
-.detail span{font-size: 16px;
+.detail span{
+font-size: 16px;
 color:#887f69;}
 .detail hr{border-color:#887f69;}
 .detail p {margin-left:0;}
@@ -373,11 +388,6 @@ p{
 
 
 .sp_navi img{display: none;}
-.owl-dot{
-    float: left;}
-.owl-theme .owl-dots .owl-dot span{
-    width:25px;height:2px;background:#D6D6D6;transition:opacity .2s ease;border-radius:0px}
-.owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{background:#9d1a2d}
 
 .pagetop{float: right;}
 
@@ -477,7 +487,7 @@ li img {
   
   }
 #products_box{margin-top: 35px;
-    height: 1800px;
+    height: 1500px;
    
 }
 
@@ -543,7 +553,7 @@ li img {
 }
 
 .otodoke{margin-left: 10px;
-    width: 88%;
+    width: 174px;
 }
 
 h1.guide{color: #887f69;
@@ -563,11 +573,9 @@ span.guide{margin-left: 10px;}
 .contact img{
     margin: 7px;
 }
-.owl-theme .owl-dots .owl-dot span{width: 50px;height: 4px;}
+
 .search_box{
     display:none;}
-.owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{background:#9d1a2d}
-
 
 .side_bar{margin-top:30px;
 
@@ -636,6 +644,100 @@ font-size: 10px;
     
 }
 
+.COLOR_SIZE {color:#887f69;
+font-size: 14px;
+    
+}
+.COLOR_SIZE table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-top: 10px; 
+	background-color: $baseColor;
+}
+.COLOR_SIZE td {
+    text-align: center;
+	border: solid 1px;
+	padding: 0.5em;
+	font-weight: bold;
+}
+.COLOR_SIZE .check{ background-color: white;
+font-size: 15px;
+}
+
+.COLOR_SIZE2 {color:#887f69;
+font-size: 14px;
+    
+}
+.COLOR_SIZE2 table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-top: 10px; 
+	background-color: $baseColor;
+}
+.COLOR_SIZE2 .main {
+    text-align: center;
+    vertical-align: middle;
+	border: solid 1px;
+	padding: 0.5em;
+	font-weight: bold;
+	width: 33.333%;
+}
+.COLOR_SIZE2 .sub{ background-color: white;
+	border: solid 1px;
+	padding: 0.5em;
+text-align: left;
+}
+.PRICE{color:#887f69;
+font-size: 14px;
+width: 100%;
+margin-right: 0;
+display: inline-block;
+vertical-align: middle;  
+}
+
+.PRICE h1{color:#e80f66;
+font-size: 22px;
+font-style: italic;
+display: inline-block;
+margin-left: 45px;
+vertical-align: middle;
+margin-top: 10px;
+margin-bottom: 10px;
+
+
+     
+}
+
+.PRICE h5{color: black;
+font-size: 14px;
+font-style: italic;
+display: inline-block;
+vertical-align: middle;  
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.Add{
+    display: none;}
+
+.sp_Add{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;}
+.QUANTITIY{color:#887f69;
+font-size: 14px;}
+.box{ border: solid 1px;
+margin: 10px 25px;
+width: 50%;
+height: 30px;
+
+}
+.detail {margin-top: 30px;}
+
+.detail span{
+font-size: 16px;
+color:#887f69;}
+.detail hr{border-color:#887f69;}
+.detail p {margin-left:0;}
 
     
     
