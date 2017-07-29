@@ -5,6 +5,9 @@ body {
 hr {
   margin: 1rem 0; }
 
+li {
+  margin-bottom: 0; }
+
 #menu {
   cursor: pointer; }
 
@@ -111,7 +114,7 @@ hr {
 
 @media (min-width: 769px) {
   #header_in {
-    margin: 40px 190px; }
+    margin: 40px auto; }
 
   .logo {
     float: left; }
@@ -441,7 +444,7 @@ hr {
     width: 18%;
     cursor: pointer;
     float: left;
-    margin: 3px;
+    margin: 0px 3px;
     position: relative;
     left: 0px; }
 

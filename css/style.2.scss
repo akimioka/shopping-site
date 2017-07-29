@@ -9,7 +9,7 @@ body{
      background-color: $baseColor;
     }
 hr{ margin: 1rem 0;}
-
+li{ margin-bottom: 0;}
 #menu {
   cursor: pointer;
 }
@@ -117,7 +117,7 @@ margin-right: 5px;}
 @media(min-width:769px){
     //ヘッダー
 #header_in{
-    margin: 40px 190px;
+    margin: 40px auto;
     }
 .logo{float: left; }
 .product_inner{
@@ -197,6 +197,7 @@ li img {
     float: left;
     position: relative;
 }
+
 .COLOR_SIZE {color:#887f69;
 font-size: 14px;
     
@@ -474,7 +475,7 @@ li {
   width: 18%;  
   cursor: pointer;
   float: left;
-  margin: 3px;
+  margin: 0px 3px;
   position: relative;
   left: 0px;
   

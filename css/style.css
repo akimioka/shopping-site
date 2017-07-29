@@ -58,7 +58,7 @@ body {
 
 @media (min-width: 769px) {
   #header_in {
-    margin: 40px 190px; }
+    margin: 40px auto; }
 
   .logo {
     float: left; }
